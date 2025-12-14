@@ -1,66 +1,93 @@
 @font-face {
+    
     font-family: "oswald";
     src: url("fonts/Oswald-VariableFont_wght.ttf");
 }
 
-@keyframes animacion_titulo{
 
-    0% {font-variation-settings: "wght" 0;}
-    50% {font-variation-settings: "wght" 600;}
-    100% {font-variation-settings: "wght" 0;}
-}
 
 @media (max-width: 600px){
 
-    .titulo_uno, .titulo_dos{
+    .titulo_uno, .titulo_dos, .titulo_tres{
+        
+        display: block;
 
-        font-size: 8vw;
+        font-size: 6vw;
+        
 
     }
-    
+
     .mario_luigi{
 
         max-width: 100%;
         height: auto;
     }
-}
-
-
-body{
-    background-color: rgb(107, 139, 158);
-
-}
-
-
-.titulo_uno{ 
-    font-family: "oswald", serif;
-    text-align: center;
-
-    font-variation-settings: "wght" 0;
-
-    animation: animacion_titulo 1.5s ease-in-out infinite;
-
 
     
 }
 
-.titulo_dos{
-   
+
+
+
+body{
+    
+    background-color: var(--color_principal);
+}
+
+
+.titulo_uno{ 
+    
+    display: block;
+
     color: white;
 
-    position: relative;
-    top: -61px;
     font-family: "oswald", serif;
     text-align: center;
 
     font-variation-settings: "wght" 0;
-    animation: animacion_titulo 1.5s ease-in-out infinite;
+
+    
+    animation: animacion_titulo .8s ease-out infinite;
+   
+}
+
+
+.titulo_tres{
+    
+    display: block;
+    color: rgb(0, 0, 0);
+
+    position: relative;
+    top: -125px;
+    font-family: "oswald", serif;
+    text-align: center;
+
+    font-variation-settings: "wght" 0;
+    animation: animacion_titulo .8s ease-out infinite;
+}
+
+.titulo_dos{
+    
+    display: block;
+    color: gray;
+
+    position: relative;
+    top: -63px;
+    font-family: "oswald", serif;
+    text-align: center;
+
+    font-variation-settings: "wght" 0;
+    animation: animacion_titulo .8s ease-out infinite;
 
     
 }
 
 .mario_luigi{
-    
+
+    transform: translate3d(0, 0, 0);
+
+    image-rendering: pixelated;
+
     display: block;
 
     height: 280px;
@@ -71,11 +98,27 @@ body{
 
     object-fit: cover;
     
-    filter: drop-shadow(7px -7px 1.5px black);
-
-
+    filter: drop-shadow(11px -12px 1.2px black);
 
     
 }
 
 
+.flecha_derecha_blanca{
+
+    
+    display: block;
+    position: relative;
+
+
+    height: 40px;
+    width: 40px;
+
+    top: -245px;
+    margin-left: auto;
+
+    filter: drop-shadow(5px 4px 0.5px black);
+
+    animation: animacion_flecha .9s infinite ease-in-out;
+    
+}
