@@ -1,0 +1,22 @@
+@keyframes animacion_titulo{
+
+    0% {font-variation-settings: "wght" 0;}
+    50% {font-variation-settings: "wght" 600;}
+    100% {font-variation-settings: "wght" 0;}
+
+}
+
+@keyframes animacion_flecha{
+
+    0% {left: 0px; }
+    25% {left: 25px; }
+    40% {left: 3px; }
+    100% {left: 0px; }
+}
+
+@keyframes toast {
+    
+    0% {margin-top: 300px; }
+    50% {margin-top: 250px; }
+    100% {margin-top: 0px; }
+}
