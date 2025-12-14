@@ -1,3 +1,13 @@
+@media (max-width: 600px) {
+    
+    h1, h2, .contenedor_lista{
+       
+        
+       display: block;
+       font-size: 6vw;
+    }
+}
+
 @font-face {
     
     font-family: "oswald";
@@ -10,15 +20,7 @@
     src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf");
 }
 
-@media (max-width: 600px) {
-    
-    h1, h2, .contenedor_lista{
-       
-        
-       display: block;
-       font-size: 6vw;
-    }
-}
+
 
 body{
     
