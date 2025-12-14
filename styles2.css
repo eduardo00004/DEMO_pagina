@@ -23,6 +23,8 @@ h1{
     font-variation-settings: "wght" 300;
     text-decoration: underline;
 
+    animation: animacion_titulo .8s infinite ease-out;
+
 
 }
 
@@ -31,6 +33,8 @@ h2{
     font-family: "oswald";
 
     text-align: center;
+
+
 }
 
 
@@ -49,15 +53,54 @@ h2{
     
 }
 
+.pokemon{
+
+    cursor: pointer;
+
+    transition: font-size .28s ease-in-out;
+}
+
+.pokemon:hover{
+
+    font-size: 30px;
+}
+
+.res_4{
+
+    cursor: pointer;
+
+    transition: font-size .28s ease-in-out;
+}
+
+
+.res_4:hover{
+
+    font-size: 30px;
+}
+
+
 .balatro{
     
-    cursor: pointer;
+    cursor: pointer;    
     
     transition: font-size .28s ease-in-out;
 
 }
 
 .balatro:hover{
+
+    font-size: 30px;
+}
+
+
+.kingdom_hearts{
+
+    cursor: pointer;
+
+    transition: font-size .28s ease-in-out;
+}
+
+.kingdom_hearts:hover{
 
     font-size: 30px;
 }
@@ -84,7 +127,7 @@ progress{
     width: 300px;
     height: 30px;
 
-    
+
     margin-top: -70px;
     transform: scaleY(3);
 }
