@@ -1,0 +1,61 @@
+@font-face {
+    
+    font-family: "oswald";
+    src: url("fonts/Oswald-VariableFont_wght.ttf");
+}
+
+body{
+    
+    background-color: var(--color_principal);
+}
+
+h1{
+
+    text-align: center;
+    font-family: "oswald";
+
+    font-variation-settings: "wght" 300;
+    text-decoration: underline;
+
+
+}
+
+
+
+.contenedor_lista{
+
+    display: block;
+
+    word-spacing: 2px;
+    margin-top: 100px;
+
+    font-size: 19px;
+    
+}
+
+.balatro{
+    
+    cursor: pointer;
+    
+    transition: font-size .28s ease-in-out;
+
+}
+
+.balatro:hover{
+
+    font-size: 30px;
+}
+
+.toast{
+
+    font-size: 29px;
+
+    margin-top: 0px;
+
+    font-style: italic;
+    text-align: center;
+    
+    animation: toast ease-out .8s;
+
+    cursor: pointer;
+}
