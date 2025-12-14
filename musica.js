@@ -2,7 +2,7 @@ let balatro_lista = document.getElementById("balatro");
 
 
 
-balatro_lista.addEventListener("click", ()=> {
+balatro_lista.addEventListener("click", function(evento){
     
     let musica_balatro = new Audio("musica/Balatro Main Theme.wav");
     musica_balatro.play();
@@ -13,7 +13,6 @@ balatro_lista.addEventListener("click", ()=> {
     toast.innerText = "parar musica";
     toast.className = "toast";
 
-    body.appendChild(toast);
 
     toast.addEventListener("click", () =>{
 
